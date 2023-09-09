@@ -8,9 +8,9 @@ Download your "transactions" file:
 5. Click "Download", and save this file wherever you want.
 
 Running the application:
-1. Run the "AnalyzeTrades" application. The terminal should pop up.
+1. Run main.py. The terminal should pop up.
 2. After a while, the terminal will tell you to open the "transactions" file through the popup.
-3. Use the popup to select the "transactions" file.
+3. Use the dialog window to select the "transactions" file.
 4. After that, input over how many days you want to analyze your trades.
 5. After analysis, a summary plot should appear, which you can save if you want. Close the plot when done.
 6. After closing the plot, the application will save a spreadsheet with all of your trades summarized for that time period.
