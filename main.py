@@ -11,7 +11,7 @@ NOTES:
 
 title = 'AnalyzeTrades v1.3'
 author = 'Ari Esters'
-modified = '5 Sept 2022'
+modified = '25 Sept 2023'
 
 import time
 from ExtractData import ExtractData

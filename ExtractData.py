@@ -17,11 +17,11 @@ import csv
     # 'filedir' == directory of the input CSV file
     
 def ExtractData():
-    print("---> Open the transactions file through the pop-up.\n")
+    print("---> Open the transactions CSV file through the pop-up.\n")
     # select .csv file through dialog box
     root = tk.Tk()   # instantiates and creates top-level window
     root.withdraw()  # hide root window
-    filepath = filedialog.askopenfilename()
+    filepath = filedialog.askopenfilename(initialdir='./')
     root.destroy()
     
     # get the directory for this file, save data here later

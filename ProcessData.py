@@ -49,7 +49,6 @@ def ProcessData(trades):
     
     # iterate through each row of raw data
     for i in range(len(trades)):
-        print(i)
         date = trades[i][dateID]
         sym = trades[i][symbolID]
         amt = trades[i][amountID]
@@ -75,10 +74,6 @@ def ProcessData(trades):
             else:  # skip if unidentified
                 continue
             
-            # # values to be used for finding open positions
-            # if exp == True and :  # expired option
-            #     signedQty.append('-' + qty)  # treat as a SELL
-            #     price = 0  # expired options are worthless
             if float(amt) <= 0:  # trade is a BUY
                 signedQty.append(qty)                    
             elif float(amt) > 0:  # trade is a SELL --> make quantity negative
