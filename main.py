@@ -65,11 +65,6 @@ def main():
         p = prices[start:]
         q = signedQty[start:]
         
-        # Concatenate the compensation values for open positions (will sum later)
-        # labels, compensation = FindOpenPos(t,q,a)
-        # t += labels
-        # a += compensation
-        
         # sum up commissions and fees
         commsum = SumString(c)
         feesum = SumString(f)
